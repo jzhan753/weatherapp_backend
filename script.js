@@ -1,7 +1,10 @@
 const express = require('express');
 const request = require("request");
+const cors = require("cors");
 
 const app = express();
+
+app.use(cors({ origin: "http://localhost:8080" }));
 
 const key = "464243b996423326f3db39e9cc325380"
 
