@@ -4,7 +4,7 @@ const cors = require("cors");
 
 const app = express();
 
-app.use(cors({ origin: "http://localhost:8080" }));
+app.use(cors());
 
 const key = "464243b996423326f3db39e9cc325380"
 
@@ -103,3 +103,4 @@ app.get('/5day/:lat/:lon', (req, res) => {
 app.listen(3000, () => {
     console.log('Example app listening on port 3000!');
 });
+
